@@ -1,0 +1,294 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+/* HEADER */
+header {
+  background-color: #1b4f72;
+  color: white;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-icone {
+  width: 48px;
+  height: 48px;
+  background-color: #e8835a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.logo-texto h1 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.logo-texto span {
+  font-size: 12px;
+  color: #a8d8ea;
+  display: block;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+nav a.ativo {
+  color: #e8835a;
+  border-bottom: 2px solid #e8835a;
+  padding-bottom: 2px;
+}
+
+/* SEÇÃO DE CARDS (HOME) */
+.secao-cards {
+  background-color: #ebf5fb;
+  padding: 2.5rem 15%;
+}
+
+.secao-cards h2 {
+  font-size: 26px;
+  color: #1b4f72;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.badge-data {
+  display: inline-block;
+  background-color: #e8835a;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+/* CONTAINER */
+.container {
+  margin: 2rem 15%;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+.container h2 {
+  font-size: 26px;
+  color: #1b4f72;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* LINHA: imagem + texto */
+.line {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.imagem-box {
+  flex: 0 0 30%;
+}
+
+.imagem-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 5px;
+  background: #fff;
+}
+
+.texto-box {
+  flex: 0 0 65%;
+  background: #fafafa;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+.texto-box p {
+  text-align: left;
+}
+
+.texto-box ul {
+  padding-left: 1.2rem;
+}
+
+.texto-box li {
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+/* HERO (HOME) */
+.home-fundo {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.home-fundo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  animation: zoom 10s infinite alternate ease-in-out;
+}
+
+.home-fundo::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.conteudo-home {
+  position: relative;
+  z-index: 3;
+  padding: 2rem;
+  max-width: 700px;
+}
+
+.conteudo-home h2 {
+  font-size: 34px;
+  margin-bottom: 1rem;
+}
+
+.conteudo-home p {
+  font-size: 17px;
+  color: #e8f4fd;
+  text-align: center;
+}
+
+/* CARDS (HOME) */
+.grid-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 15%;
+}
+
+.card {
+  flex: 1 1 200px;
+  background: white;
+  border-top: 4px solid #e8835a;
+  padding: 1.2rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 17px;
+  color: #1b4f72;
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+}
+
+.card p {
+  font-size: 15px;
+  text-align: left;
+  margin: 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1b4f72;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0.2rem 0;
+  color: white;
+  text-align: center;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoom {
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* CANAIS DE DENÚNCIA */
+.canais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.canal {
+  background: #1b4f72;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  min-width: 120px;
+  text-align: center;
+}
+
+.canal .num {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e8835a;
+  display: block;
+}
+
+.canal .desc {
+  font-size: 13px;
+  display: block;
+  margin-top: 4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
